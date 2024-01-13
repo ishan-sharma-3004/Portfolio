@@ -10,15 +10,16 @@ export default function About(){
                         <br className="hidden lg:inline-block"/>I love to Build amazing apps.
                     </h1>
                     <p className="mb-8 leading-relaxed">
-                        gibberish about page
+                    Dedicated and efficient Research Engineer offering to support organizational goals with targeted research design and specialized parameters according to leadership. Collaborative team member with extensive experience supporting research design and amending variables to target shifting objectives. I am a systematic statistical analyst proficient in Python programming and problem-solving for multi-dimensional results analysis and hypothesis projection.
                     </p>
                     <div className="flex justify-center">
                         <a 
-                        href="/#contact"
+                        href="/#Contact"
                         className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outine-none hover:bg-green-600 rounded text-lg">
                             Work with Me
                         </a>
-                        <a href="/#projects"
+                        <br/>
+                        <a href="/#Projects"
                         className="ml-4 inline-flex text-gray bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:text-white rounded text-lg">
                         See my past work
                         </a>

@@ -18,19 +18,20 @@ function handleSubmit(e){
     .catch((error)=>alert(error));
 }
   return (
-    <section id="contact" className="relative">
+    <section id="Contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
-            width="100%"
-            height="100%"
+            width="400"
+            height="300"
             title="map"
             className="absolute inset-0"
             frameBorder={0}
             marginHeight={0}
             marginWidth={0}
             style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=97+warren+st+new+york+city&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.0554056902406!2d-121.8778300048214!3d37.67140587104951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fe90ad8e1c30f%3A0x41e6461d0f3c9f7f!2s1545%20Loganberry%20Way%2C%20Pleasanton%2C%20CA%2094566!5e0!3m2!1sen!2sus!4v1705096201319!5m2!1sen!2sus"
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           />
           <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
@@ -38,8 +39,8 @@ function handleSubmit(e){
                 ADDRESS
               </h2>
               <p className="mt-1">
-                97 Warren St. <br />
-                New York, NY 10007
+                1545 Loganberry way, <br />
+                California, United States, 94566
               </p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
@@ -47,12 +48,12 @@ function handleSubmit(e){
                 EMAIL
               </h2>
               <a className="text-indigo-400 leading-relaxed">
-                reedbarger@email.com
+                ishu.ishan3004@gmail.com
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 PHONE
               </h2>
-              <p className="leading-relaxed">123-456-7890</p>
+              <p className="leading-relaxed">+1(650) 480-0882</p>
             </div>
           </div>
         </div>
