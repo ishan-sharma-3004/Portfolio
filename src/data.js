@@ -32,3 +32,41 @@ export const projects = [
       link: "https://pythonbootcamp.com",
     },
   ];
+
+  export const exp=[
+    {
+        title:"Python",
+        Subtitle: "3yrs",
+        image:""
+    },
+    {
+        title:"Python",
+        Subtitle: "3yrs",
+        image:""
+    },
+    {
+        title:"Python",
+        Subtitle: "3yrs",
+        image:""
+    },
+    {
+        title:"Python",
+        Subtitle: "3yrs",
+        image:""
+    },
+    {
+        title:"Python",
+        Subtitle: "3yes",
+        image:""
+    },
+    {
+        title:"Python",
+        Subtitle: "3yrs",
+        image:""
+    }
+  ];
+  export const testimonial=[{
+    name:"abs",
+    image:"",
+    quote:""
+  }]
