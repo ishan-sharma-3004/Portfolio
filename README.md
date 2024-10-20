@@ -1,2 +1,0 @@
-# Portfolio
-Resume in React
