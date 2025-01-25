@@ -26,6 +26,18 @@ const info = [
 ];
 
 const Contact = () => {
+    const handleSendMessage = () => {
+        const firstName = document.getElementById("firstname").value;
+        const lastName = document.getElementById("lastname").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+
+        const mailtoLink = `mailto:ishu.ishan3004@gmail.com?subject=Contact Form Submission from ${firstName} ${lastName}&body=Name: ${firstName} ${lastName}%0AEmail: ${email}%0APhone: ${phone}%0A%0AMessage:%0A${message}`;
+
+        window.location.href = mailtoLink;
+    };
+
     return (
         <motion.section
             initial={{ opacity: 0 }}
@@ -40,15 +52,28 @@ const Contact = () => {
                     <div className="xl:h-[54%] order-2 xl:order-none">
                         <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
                             <h3 className="text-4xl text-accent">Let's Work Together</h3>
-                            <p className="text-white/60">Lorem ipsum</p>
+                            <p className="text-white/60">Please fill out the form below to get in touch.</p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <Input type="firstname" placeholder="First Name" />
-                                <Input type="lastname" placeholder="Last Name" />
-                                <Input type="email" placeholder="Email" />
-                                <Input type="phone" placeholder="Phone" />
+                                <Input id="firstname" type="text" placeholder="First Name" />
+                                <Input id="lastname" type="text" placeholder="Last Name" />
+                                <Input id="email" type="email" placeholder="Email" />
+                                <Input id="phone" type="tel" placeholder="Phone" />
                             </div>
-                            <Textarea className="h-[200px]" placeholder="Type your message here." />
-                            <Button size="md" className="max-w-40">Send Message</Button>
+                            <Textarea
+                                id="message"
+                                className="h-[200px]"
+                                placeholder="Type your message here."
+                            />
+                            <Button
+                                size="md"
+                                className="max-w-40"
+                                onClick={(e) => {
+                                    e.preventDefault(); // Prevents form submission
+                                    handleSendMessage();
+                                }}
+                            >
+                                Send Message
+                            </Button>
                         </form>
                     </div>
                     <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">

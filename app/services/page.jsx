@@ -5,23 +5,23 @@ import Link from "next/link";
 
 const services = [
     {num: '01',
-    title: 'Web Development',
-    description: 'Lorem Ipsum',
+    title: 'Machine Learning',
+    description: 'I possess strong proficiency in various machine learning and AI algorithms, including classification, regression, clustering, neural networks, and natural language processing. My expertise also includes optimization techniques, deep learning architectures, and leveraging frameworks like TensorFlow, PyTorch, and Keras to implement advanced models effectively.',
     link: "https://www.github.com/ishan-sharma-3004"
     },
-    {num: '01',
-        title: 'Web Development',
-        description: 'Lorem Ipsum',
+    {num: '02',
+        title: 'Data Analytics',
+        description: 'I have strong proficiency in data analytics, including data preprocessing, exploratory data analysis, and visualization. I am skilled in statistical analysis, predictive modeling, and leveraging tools like Python, SQL, Tableau, and Excel to extract actionable insights from complex datasets and drive data-driven decision-making.',
         link: "https://www.github.com/ishan-sharma-3004"
     },
-    {num: '01',
-        title: 'Web Development',
-        description: 'Lorem Ipsum',
+    {num: '03',
+        title: 'Full Stack',
+        description: 'I possess comprehensive expertise in full-stack development, with proficiency in both front-end and back-end technologies. On the front-end, I have experience using React, JavaScript, Figma, HTML, and CSS to create dynamic, user-friendly interfaces. On the back-end, I am skilled in working with frameworks and technologies like Node.js, Express, and Python, as well as database management with SQL and NoSQL databases. Additionally, I have a solid understanding of version control systems (Git), RESTful API design, and cloud services, enabling me to build and deploy scalable, high-performance web applications.',
         link: "https://www.github.com/ishan-sharma-3004"
     },
-    {num: '01',
-        title: 'Web Development',
-        description: 'Lorem Ipsum',
+    {num: '04',
+        title: 'Software Testing',
+        description: 'I have a strong foundation in software testing, with hands-on experience in both manual and automated testing methodologies. I am proficient in designing test cases, performing functional, regression, and performance testing, and using tools such as Pytest, Simulink, Selenium, and TestNG for automation. I also have experience with continuous integration/continuous deployment (CI/CD) pipelines, ensuring seamless integration of testing within development cycles. Additionally, I am skilled in analyzing test results, identifying bugs, and collaborating with development teams to ensure high-quality, reliable software products.',
         link: "https://www.github.com/ishan-sharma-3004"
     },
 ];
