@@ -1,8 +1,8 @@
   "use client";
 
-  import { FaJs, FaReact, FaPython, FaAws } from "react-icons/fa";
-  import { TbFileTypeSql, TbBrandAzure } from "react-icons/tb";
-  import { SiPytorch, SiKeras, SiApachekafka, SiApacheairflow, SiApacheflink } from "react-icons/si";
+  import { FaSwift, FaJs, FaReact, FaPython, FaAws, FaDocker} from "react-icons/fa";
+  import { TbFileTypeSql, TbBrandAzure, TbBrandCpp } from "react-icons/tb";
+  import { SiPytest, SiKubernetes, SiPytorch, SiKeras, SiApachekafka, SiApacheairflow, SiMongodb } from "react-icons/si";
   import { BiLogoPostgresql } from "react-icons/bi";
   import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
   import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -15,7 +15,7 @@
     info: [
       { fieldName: "Name", fieldValue: "Ishan Sharma" },
       { fieldName: "Phone No:", fieldValue: "+1(650)480-0882" },
-      { fieldName: "Experience", fieldValue: "2+ years" },
+      { fieldName: "Experience", fieldValue: "1+ years" },
       { fieldName: "Languages Known", fieldValue: "Hindi, English" },
       { fieldName: "Nationality", fieldValue: "Indian" },
       { fieldName: "Email", fieldValue: "ishu.ishan3004@gmail.com" },
@@ -41,7 +41,7 @@
     description: "",
     items: [
       { institution: "San Jose State University", degree: "Masters of Science in Engineering Management", duration: 'January 2023 - December 2024' },
-      { institution: "University of Petroleum and Energy Studies", degree: 'Bachelors of Technology in Computer Science', duration: 'June 2018 - May 2022' },
+      { institution: "UPES", degree: 'Bachelors of Technology in Computer Science', duration: 'June 2018 - May 2022' },
     ]
   };
 
@@ -51,8 +51,9 @@
       skilllist: [
         { icon: <FaPython />, name: 'Python' },
         { icon: <SiPytorch />, name: 'PyTorch' },
-        { icon: <FaJs />, name: 'JavaScript' },
-        { icon: <FaC />, name: 'C++' },
+        { icon: <FaJs />, name: 'JavaScript' },{ icon: <TbBrandCpp />, name: 'C++' },         // C++ added
+        { icon: <FaSwift />, name: 'Swift' },
+        //{ icon: <FaCogs />, name: 'Pytest' },
         { icon: <FaReact />, name: 'React' },
         { icon: <FaAws />, name: 'AWS' },
         { icon: <TbBrandAzure />, name: 'Microsoft Azure' },
@@ -61,13 +62,10 @@
         { icon: <BiLogoPostgresql />, name: 'PostgreSQL' },
         { icon: <TbFileTypeSql />, name: 'MySQL' },
         { icon: <SiKeras />, name: 'Keras' },
-        { icon: <SiPytorch />, name: 'MongoDB' }, // MongoDB added
-        { icon: <FaDocker />, name: 'Docker' },   // Docker added
-        { icon: <FaJenkins />, name: 'Jenkins' }, // Jenkins added
-        { icon: <FaKubernetes />, name: 'Kubernetes' }, // Kubernetes added
-        { icon: <FaCpp />, name: 'C++' },         // C++ added
-        { icon: <FaSwift />, name: 'Swift' },
-        {icon: <FaPytest />, name: 'Pytest'},     // Swift added
+        { icon: <SiMongodb />, name: 'MongoDB' }, // MongoDB added
+        { icon: <FaDocker />, name: 'Docker' },  
+        //{ icon: <FaJenkins />, name: 'Jenkins' }, // Jenkins added
+        {icon: <SiPytest />, name: 'Pytest'},     // Swift added
       ]
   };
 
@@ -87,7 +85,7 @@
               <TabsTrigger value="about">About Me</TabsTrigger>
             </TabsList>
 
-            <div className="min-h-[70vh] w-full">
+            <div className="min-h-[60vh] w-full">
               {/* Experience Tab */}
               <TabsContent value="experience" className="w-full">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -114,7 +112,7 @@
               <TabsContent value="education" className="h-full w-full">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{education.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
+                  <p className="max-w-[700px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
                   <ScrollArea className="h-[400px]">
                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                       {education.items.map((item, index) => (
